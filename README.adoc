@@ -1,0 +1,14 @@
+一个简单的LD2410读取雷达状态的库
+操作步骤如下：
+1.实例化一个LD2410对象
+//LD2410 lei_da;
+2.读取串口收据
+lei_da.serial_red();
+3.装载雷达数据到数据结构
+lei_da.setup_lei_da ();
+4.打印数据结构
+Serial.printf("人员状态=%s\n 运动目标距离%dCM 运动目标能量%d 静止目标距离%dCM 静止目标能量%d  距离%d厘米\n",lei_da.yqj_s.mu_biao_zhuang_tai,lei_da.yqj_s.yun_dong_mu_biao_ju_li,lei_da.yqj_s.yun_dong_mu_biao_neng_liang,lei_da.yqj_s.jin_zhi_mu_biao_ju_li,lei_da.yqj_s.jin_zhi_mu_biao_neng_liang,lei_da.yqj_s.tan_ce_ju_li);
+
+
+数据结构中：
+yqj_s.mu_biao_zhuang_tai  雷达状态，返回无人、有人等代标人员状态的字符串。

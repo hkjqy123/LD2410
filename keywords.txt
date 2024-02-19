@@ -1,0 +1,8 @@
+
+
+LD2410	KEYWORD1	
+
+
+yqj_s	KEYWORD2
+serial_red	KEYWORD2
+setup_lei_da	KEYWORD2
